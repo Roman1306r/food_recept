@@ -1,0 +1,555 @@
+@import "reset.sass"
+$colorlink:  #d9be8f    
+$headercolor: #404040
+body
+    font-family: 'PT Sans Narrow', sans-serif
+    background-color: rgb(0,0 , 0, 0.7)
+ 
+@import "header.sass"
+
+@mixin recepttitle
+    display: block
+    color: white
+    font-size: 35px 
+    margin: 10px 0
+    white-space: nowrap
+    @media (max-width: 1050px)
+        font-size: 30px
+
+@mixin title
+    font-size: 50px
+    color: #d9be8f
+@keyframes form-btn
+    100%
+        transform: translate(5px, 0) rotate(90deg)
+
+    
+  
+.wrapper
+    max-width: 1440px
+    margin: 0 auto
+    overflow: hidden
+    width: 100%
+.content
+    
+    padding-left: 200px 
+    @media (max-width: 992px)
+        padding-left: 0px
+        padding-top: 40px
+    &__header
+        transform: translate(0, -100%)
+        transition: all 0.7s ease 0s
+        background-color: rgb(0,0 , 0, 0.3)
+        display: flex
+        padding: 5px 20px
+        justify-content: space-between
+        align-items: center
+        &-title
+            font-size: 12px
+            color: white
+            font-weight: 300
+            text-transform: uppercase
+        &-media
+            display: flex
+            justify-content: center
+            gap: 20px
+            align-items: center
+            img 
+                width: 20px
+        
+
+
+.recept
+    padding-top: 30px 
+    text-align: center
+    &-icon
+        margin: 30px 0
+        position: relative
+        &::before
+            content: ''
+            width: 30%
+            position: absolute
+            height: 1px
+            background-color: white
+            top: 50%
+            left: 0
+        &::after   
+            content: ''
+            width: 30%
+            position: absolute
+            height: 1px
+            background-color: white
+            top: 50%
+            right: 0
+        img
+            width: 30px
+            position: relative
+            z-index: 1
+    &__container
+        padding: 0px 40px
+        overflow: hidden
+        @media (max-width: 992px)
+            padding: 0px 10px    
+    &__title
+        @include title  
+        transform: translate(0, -50%) 
+        transition: 1s           
+        @media (max-width: 992px)
+            font-size: 35px
+        @media (max-width: 767px)
+            font-size: 25px
+
+    &__top
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex: 0 0 50%
+        gap: 20px
+        text-align: center
+        margin-bottom: 20px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 10px
+            margin-bottom: 10px
+  
+
+        &-item
+            padding: 100px 10px
+            text-align: center
+            width: 100%
+            color: white
+            transition: all 0.3s
+            @media (max-width: 767px)
+                padding: 40px 10px
+
+            &:first-child
+                background: url('../images/recept/01-min.jpg') center no-repeat
+                background-size: cover
+            &:last-child
+                background: url('../images/recept/02-min.jpg') center no-repeat
+                background-size: cover
+        &-description
+            display: inline
+            background-color: rgb(0, 0, 0, 0.6) 
+            padding: 5px 10px
+        &-title
+            @include recepttitle
+            transform: translate(0%, -20%)
+            transition: all 0.5s           
+            &:hover
+                text-decoration: underline
+            @media (max-width: 767px)
+                white-space: wrap
+                font-size: 22px
+                text-decoration: underline
+        & img
+            display: block
+            margin: 0 auto    
+    &__center
+        display: flex
+        justify-content: space-between
+        gap: 20px
+        margin-bottom: 20px
+        @media (max-width: 767px)
+            flex-direction: column
+            gap: 10px
+            margin-bottom: 10px
+
+        &-title 
+            display: block
+            font-size: 20px
+            color: white
+            padding: 5px 10px
+            background-color: rgb(0, 0, 0, 0.6) 
+            border-radius: 10px
+            transform: translate(0%, -20%)
+            transition: all 0.5s 
+            &:hover
+                text-decoration: underline
+            @media (max-width: 767px)
+                font-size: 13px
+                text-decoration: underline
+        &-item
+            width: 100% 
+            &-big
+                width: 100%
+                padding: 50px 10px
+                background: url('../images/recept/03-min.jpg') center no-repeat
+                background-size: cover
+                @media (max-width: 767px)
+                    padding: 30px 10px
+                &-next
+                    background: url('../images/recept/08-min.jpg') center no-repeat
+                    background-size: cover
+            &-small
+                width: 100%
+                display: flex
+                justify-content: center
+                align-items: center
+                gap: 10px
+    &-item-small
+        padding: 50px 10px
+        @media (max-width: 767px)
+            padding: 30px 10px
+        &:first-child
+            background: url('../images/recept/04-min.jpg') center no-repeat
+            background-size: cover
+        &:last-child
+            background: url('../images/recept/05-min.jpg') center no-repeat
+            background-size: cover
+        &-next  
+            &:first-child
+                background: url('../images/recept/06-min.jpg') center no-repeat
+                background-size: cover
+            &:last-child
+                background: url('../images/recept/07-min.jpg') center no-repeat
+                background-size: cover
+
+
+
+.filter
+
+    &__continer 
+        padding: 0px 40px 
+        text-align: center
+        @media (max-width: 992px)
+            padding: 0px  10px
+    &__buttons-box 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media (max-width: 767px)
+            display: block
+
+    &__title
+        @include title
+        transform: translate(-50%, 0)
+        transition: all 1s
+        font-size: 30px 
+        @media (max-width: 767px)
+            font-size: 18px
+            margin-bottom: 10px
+
+    &__btns
+        display: flex
+        justify-content: center
+        align-items: center
+            
+        button
+            display: block
+            background-color: #333
+            color: white
+            font-size: 15px
+            padding: 5px 20px
+            color: $colorlink
+            cursor: pointer
+            border: 1px solid $colorlink
+            box-shadow: 0px 0px 1px $colorlink
+            @media (max-width: 767px)
+                font-size: 12px
+            &:first-child
+                border-top-left-radius: 5px
+                border-bottom-left-radius: 5px
+            &:last-child
+                border-top-right-radius: 5px
+                border-bottom-right-radius: 5px
+            &.active
+                background-color: #100f0f
+                &:hover
+                    background-color: #100f0f
+            &:hover
+                background-color: #292929
+
+
+    &__cards
+        margin-top: 15px
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        @media (max-width: 767px)
+            display: block
+    &__inline-block
+        display: flex
+        gap: 10px
+        margin-bottom: 10px
+        @media (max-width: 992px)
+             gap: 5px
+        @media (max-width: 767px)
+            display: block
+            margin-bottom: 0
+    &__card
+        display: flex
+        box-shadow: 0px 0px 1px $colorlink
+        border-radius: 10px
+        overflow: hidden
+        flex: 0 0 50%
+        width: 100%
+        @media (max-width: 767px)
+            // display: block
+            margin-bottom: 10px
+        &-image
+            flex: 1 0 50%
+            position: relative
+            overflow: hidden
+            img
+                object-fit: cover
+                position: absolute
+                width: 100%
+                height: 100%
+                top: 0
+                left: 0
+                transition: all 0.3s ease 0s
+                &:hover
+                    transform: scale(1.03) 
+        &-like
+            cursor: pointer 
+            img
+                width: 25px
+            span
+                color: $colorlink
+                font-size: 20px            
+        &-content 
+            padding: 20px 5px
+            display: flex
+            flex-direction: column    
+        &-title
+            color: white
+            font-size: 20px
+            @media (max-width: 992px)
+                font-size: 15px
+            &:hover
+                text-decoration: underline
+        &-icons 
+            display: flex
+            justify-content: center
+            align-items: center
+            padding: 10px 0px
+
+            img
+                width: 20px
+                @media (max-width: 992px)
+                    width: 15px
+            span
+                padding: 0px 10px
+                color: $colorlink
+                white-space: nowrap
+                @media (max-width: 992px)
+                    padding: 0 5px
+
+        &-recept 
+            color: $colorlink
+            font-size: 18px
+            flex: 1 1 auto
+            @media (max-width: 992px)
+                font-size: 13px
+
+        
+
+.hot 
+    text-align: center
+    padding: 0px 20px 40px 20px
+    overflow: hidden
+    @media (max-width: 992px)
+        padding: 0px 10px 40px 10px
+
+    &__title 
+        color: $colorlink
+        font-size: 40px
+        margin-bottom: 20px
+        text-transform: uppercase
+        @media (max-width: 767px)
+            font-size: 25px
+    &__body
+        display: flex
+        justify-content: space-between 
+        gap: 20px  
+        @media (max-width: 992px)
+            gap: 10px 
+        @media (max-width: 767px)
+              flex-wrap: wrap  
+         
+    &__item 
+        position: relative
+        background-size: cover
+        flex: 1 1 25%
+        padding: 300px 10px 30px 10px
+        cursor: pointer
+        transform: translate(-20%, 0)
+        opacity: 0
+        
+        @media (max-width: 767px)
+            padding: 100px 30px 30px 30px
+        &:nth-child(1)
+            transition: 0.5s ease 0s 
+        &:nth-child(2)
+            transition: 0.5s ease 0.2s
+        &:nth-child(3)
+            transition: 0.5s ease 0.4s
+        &:nth-child(4)
+            transition: 0.5s ease 0.6s
+        &:hover
+            outline: 1px solid $colorlink
+        &:nth-child(1)
+            background: url('../images/hot/h_1-min.jpg') center no-repeat
+        &:nth-child(2)
+            background: url('../images/hot/h_2-min.jpg') center no-repeat
+        &:nth-child(3)
+            background: url('../images/hot/h_3-min.jpg') center no-repeat
+        &:nth-child(4)
+            background: url('../images/hot/h_4-min.jpg') center no-repeat         
+        &-title
+            color: white 
+            font-size: 26px
+            @media (max-width: 767px)
+                font-size: 18px
+                background-color: rgba(0, 0, 0, 0.5)
+                display: inline
+
+
+.form 
+    // background-color: #5e5e5e
+    background: url('../images/form-bg.jpg') center no-repeat
+    background-size: cover
+    &__container
+        max-width: 600px
+        margin: 0 auto 
+        text-align: center
+        padding: 100px 10px
+    &__title 
+        color: $colorlink
+        margin-bottom: 10px
+    &__body
+        position: relative 
+        &-input
+            width: 100%
+            height: 50px
+            background-color: #333 
+            font-size: 20px
+            padding: 0px 70px 0px 10px 
+            color: white
+        button
+            cursor: pointer
+            position: absolute
+            height: 100%
+            top: 0
+            right:  0
+            background: black
+            padding: 0px 10px
+            overflow: hidden
+            &:hover
+                img
+                    animation: form-btn 1s alternate
+        img
+            width: 35px
+            transform: rotate(90deg)
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import "footer.sass"
+@import "search.sass"
+
+
+
+.up
+    visibility: hidden
+    opacity: 0
+    position: fixed
+    right: 2px
+    bottom: 10px
+    cursor: pointer
+    @media (max-width: 767px)
+        bottom: 2px
+        right: 5px
+    &.watch
+        visibility: visible
+        opacity: 1
+    img
+        width: 30px
+        @media (max-width: 767px)
+            width: 20px
+
+
+
+
+
+
+.init
+    transform: translate(0, 0)
+    opacity: 1
+    visibility: visible
+
+
+
+@import "popup.sass"
+
+
+
+.load
+    left: 0
+    top: 0
+    z-index: 30
+    position: fixed
+    background-color: black
+    min-width: 100vw
+    min-height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center 
+    gap: 20px
+    background: url('../images/load-bg.jpg') center no-repeat
+    background-size: cover
+    span
+        background-color: grey
+        height: 8px
+        width: 30px
+        display: block
+        animation: load-circle 0.6s infinite 
+        &:nth-child(1)
+            animation-delay: 0.2s
+        &:nth-child(2)
+            animation-delay: 0.4s
+        &:nth-child(3)
+            animation-delay: 0.6s
+            
+
+@keyframes load-circle
+    0%, 100%
+        background-color: grey
+    50%
+        background-color: white
+
+    
+
+
+.window 
+    position: fixed
+    background-color: black
+    color: white
+    display: flex
+    transform: translate(0, 100%)
+    transition: 0.3s
+    padding: 5px 20px
+    right: 0
+    bottom: 0
+    z-index: 31
+    align-items: center
+    border-top-left-radius: 10px
+    border-top-rigth-radius: 10px
+    &.act
+        transform: translate(0, 0%)
+    p
+        font-size: 16px
+    img
+        width: 30px
+
+   

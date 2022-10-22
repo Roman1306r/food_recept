@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="favicon.ico" rel="icon" size="40">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FOOD</title>
+</head>
+<body>
+   <div class="wrapper">
+        <header class="header">
+            <div class="header__logo"><a href="#"><img src="images/header/logo.png" alt="logo"></a></div>
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__slogan">БЛЮДО.ru</div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#" data-scr="page-block1" class="header__link active act">Популярное</a></li>
+                    <li><a href="#" data-scr="page-block2" class="header__link">Рецепты</a></li>
+                    <li><a href="#" data-scr="page-block3" class="header__link">интересное</a></li>
+                    <li><a href="#" data-scr="page-block4" class="header__link">рассылка</a></li>
+                </ul>
+                <div class="header__lang">
+                    <a href="index-en.html" class="header__lang-item">EN</a>
+                    <a href="#" class="header__lang-item active">RU</a>
+                </div>
+                <div class="header__social">
+                    <a href="#"><img src="images/header/vk.svg" alt="vk"></a>
+                    <a href="#"><img src="images/header/inst.svg" alt="isnt"></a>
+                    <a href="#"><img src="images/header/google.svg" alt="google"></a>
+                </div>
+            </nav>        
+        </header>
+        <main class="content">
+            <section class="content__header">
+                <h1 class="content__header-title">Вкусная еда это просто!</h1>
+                <div class="content__header-media">
+                    <div class="content__header-icon theme dark"><a title="Тема" href="#"><img src="images/content-header/luna.png" alt="luna"></a></div>
+                    <div class="content__header-icon registration"><a title="Регистрация" href="#"><img src="images/content-header/zwon.png" alt="zwon"></a></div>
+                    <div class="content__header-icon admin"><a title="Вход"  href="#"><img src="images/content-header/door.png" alt="door"></a></div>
+                    <div class="content__header-icon searchopen"><a title="Поиск" href="#"><img src="images/content-header/search.png" alt="search"></a></div>
+                </div>
+            </section>
+            <section class="recept page-block1">
+                <div class="recept__container">
+                    <h2 class="recept__title anim__items s">#ГОРЯЧАЯ ПОДБОРКА</h2>
+                    <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                    <div class="recert__body">
+                        <div class="recept__top">
+                            <div class="recept__top-item">
+                                <p class="recept__top-description s">БЛЮДО ДНЯ</p>
+                                <a href="#" class="recept__top-title anim__items s">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</a>
+                                <img src="images/recept/ico.png" alt="ico">
+                            </div>
+                            <div class="recept__top-item">
+                                <p class="recept__top-description s">ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ</p>
+                                <a href="#" class="recept__top-title anim__items s">7 ЛУЧШИХ РЕЦЕПТОВ НЕДЕЛИ</a>
+                                <img src="images/recept/ico.png" alt="ico">
+                            </div>
+                        </div>
+                        <div class="recept__center">
+                            <div class="recept__center-item recept__center-item-big">
+                                <a href="#" class="recept__center-title anim__items s">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</a>
+                            </div>
+                            <div class="recept__center-item recept__center-item-small">
+                                <div class="recept-item-small">
+                                    <a href="#" class="recept__center-title anim__items s">КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ С ОВОЩАМИ</a>
+                                </div>
+                                <div class="recept-item-small">
+                                    <a href="#" class="recept__center-title anim__items s">10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</a>
+                                </div>
+                            </div>
+                        </div>              
+                    </div> 
+                </div>                
+            </section>
+            <section class="filter page-block2">
+                <div class="filter__continer">
+                    <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                    <div class="filter__buttons-box">
+                        <h2 class="filter__title anim__items s">Выберете подходящий рецепт</h2>
+                        <div class="filter__btns" id="btns__container">
+                            <button id="all" class="active">Все</button>
+                            <button id="new">Новые</button>
+                            <button id="pop">Простые</button>
+                        </div>
+                    </div>
+                    <div class="filter__cards">
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_1-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Утиные ножки с овощами и грудинкой</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>2:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>350 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_2-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Салат из свеклы с козьим сыром и медовой заправкой</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:15:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>863 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Сахар, свекла, белый винный уксус, мед, оливковое масло, бальзамический уксус, горчица, мягкий козий сыр, очищенные грецкие орехи, салат корн, соль
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_3-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Американский тыквенный пирог с корицей</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>02:00:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>652 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Пшеничная мука, сливочное масло, куриное яйцо, тыква, сахар, сливки 30%-ные  
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_4-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Салат «Цезарь» традиционный с фасолью</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>179 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Красная консервированная фасоль, консервированная кукуруза, куриная грудка, сухарики, китайская капуста                              
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_5-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Соте из брюссельской капусты с варено-капченым окороком</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>283 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">чеснок, перец черный, капуста брюссельская, петрушка, масло, бульон овощной, соль, тыква, окорок варено-копченый, морковь средняя
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_6-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Жареные баклажаны с помидорами</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:25:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>145 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Баклажан, помидоры, лук репчатый, чеснок, растительное масло, черный молотый перец, соль, петрушка          
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_7-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Наварен из говядины</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>02:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>5000 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Морковь, масло растительное, соль, лук, мини-патисоны, вино белое сухое, картофель, чеснок, веточка тимьяна, говядина, горошек зеленый
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_8-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Брюссельская капуста с белым соусом с сыром</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:40:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>50 ккал</span>
+                                    </div>
+                                    <div class="filter__card-recept">Капуста брюссельская, мускатный орех,оливковое масло, перец черный молотый, твёрдый сыр, молоко, сливочное масло, мука, вода, соль
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hot page-block3">
+                <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                <h2 class="hot__title">Возможно вам будет интересно</h2>
+                <div class="hot__body">
+                    <div class="hot__item anim__items">
+                        <h3 class="hot__item-title s">ПОХМЕЛЬНЫЕ РЕЦЕПТЫ</h3>
+                    </div>
+                    <div class="hot__item anim__items">
+                        <h3 class="hot__item-title s">МАСЛЕНИЦА</h3>
+                    </div>
+                    <div class="hot__item anim__items">
+                        <h3 class="hot__item-title s">РЕЦЕПТЫ ДЛЯ ДЕТЕЙ</h3>
+                    </div>
+                    <div class="hot__item anim__items">
+                        <h3 class="hot__item-title s">ЗДОРОВОЕ ПИТАНИЕ</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="form page-block4">
+                <div class="form__container">
+                    <h2 class="form__title s">ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ</h2>
+                    <form action="#" class="form__body">
+                                <input type="email" id="email" class="form__body-input" placeholder="E-mail">
+                                <button type="submit"><img src="images/up.png" alt="send"></button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__body">
+                    <div class="footer__mail s">По вопросам сотрудничества - <a href="mailto:ivanovroc@gmail.com">ivanovroc@gmail.com</a></div>
+                    <div class="footer__year"><span></span> Все права защищены</div>
+                </div>
+            </footer>
+        </main>
+   </div>
+
+
+<!-- UP -->
+<section class="up">
+    <img src="images/up.png" alt="up">
+</section>
+
+
+
+
+<!-- SEARCH -->
+<section class="search close">
+    <div class="search-container">
+        <input type="text" placeholder="поиск" name="search" id="search">
+        <button class="search-close">Закрыть</button>
+    </div>
+    <a href="#" class="search__result"></a>
+</section>
+
+
+<!-- popup -->
+<section class="popup">
+    <div class="popup__container">
+        <div class="popup__body">
+            <a href="#" class="popup__body-close"><img src="images/close.svg" alt="close"></a>
+            <form action="#" class="popup__form">
+                <h2 class="popup__title">Вход</h2>
+                <div class="popup__form-content">
+                    <div class="popup__form-left">
+                        <input type="text" class="popup__form-input" id="login" placeholder="логин">
+                        <input type="password" class="popup__form-input" id="pass" placeholder="пароль">
+                        <a href="#" class="popup__form-password">Забыли пароль?</a>
+                        <button type="submit">Войти</button>
+                    </div>
+                    <div class="popup__form-rigth">
+                        <p>По умолчанию логин для входа: <b>admin</b></p>
+                        <p>Пароль для входа: <b>1234</b></p>
+                        <p>Нажимая кнопку входа, вы принимаете условия <a href="#">Пользовательского соглашения</a> и <a href="#">Политики конфиденциальности</a></p>
+                    </div>
+                </div>
+                <div class="popup__form-register">
+                    <a href="#" class="popup__form-register-link">Регистрация</a>
+                </div>
+            </form>
+            <div class="popup__autorisiert">
+                <h2 class="popup__title">Выйти из аккаунта</h2>
+                <button id="exit" type="submit">Выйти</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="popup registration">
+    <div class="popup__container registrations">
+        <div class="popup__body registration">
+            <a href="#" class="popup__body-close registration"><img src="images/close.svg" alt="close"></a>
+            <form action="#" class="popup__form registr">
+                <h2 class="popup__title">Регистрация</h2>
+                <div class="popup__form-content">
+                    <div class="popup__form-left">
+                        <input type="text" class="popup__form-input" id="login-registr" placeholder="придумайте логин">
+                        <input type="password" class="popup__form-input" id="pass-registr" placeholder="придумайте пароль">
+                        <button type="submit">Зарегистрироваться</button>
+                    </div>
+                </div>
+                <div class="popup__form-register">
+                    <a href="#" class="popup__form-register-link registr">Уже имеете аккаунт?</a>
+                </div>
+            </form>     
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="load">
+        <span></span>
+        <span></span>
+        <span></span>
+</section>
+
+
+<div class="window">
+    <img src="images/content-header/ok.png" alt="ok">
+    <p>Авторизация выполнена успешно!</p>
+</div>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+

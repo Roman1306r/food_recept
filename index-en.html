@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="Image/x-icon" href="favicon.ico" rel="icon" size="40">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>FOOD</title>
+</head>
+<body class="lock">
+   <div class="wrapper">
+        <header class="header">
+            <div class="header__logo"><a href="#"><img src="images/header/logo.png" alt="logo"></a></div>
+            <div class="header__burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="header__slogan">FOOD.ru</div>
+            <nav class="header__menu">
+                <ul class="header__list">
+                    <li><a href="#" data-scr="page-block1" class="header__link active act">Popular</a></li>
+                    <li><a href="#" data-scr="page-block2" class="header__link">Recipes</a></li>
+                    <li><a href="#" data-scr="page-block3" class="header__link">interesting</a></li>
+                    <li><a href="#" data-scr="page-block4" class="header__link">mailing list</a></li>
+                </ul>
+                <div class="header__lang">
+                    <a href="#" class="header__lang-item active">EN</a>
+                    <a href="index.html" class="header__lang-item">RU</a>
+                </div>
+                <div class="header__social">
+                    <a href="#"><img src="images/header/vk.svg" alt="vk"></a>
+                    <a href="#"><img src="images/header/inst.svg" alt="isnt"></a>
+                    <a href="#"><img src="images/header/google.svg" alt="google"></a>
+                </div>
+            </nav>        
+        </header>
+        <main class="content">
+            <section class="content__header">
+                <h1 class="content__header-title">Delicious food is easy!</h1>
+                <div class="content__header-media">
+                    <div class="content__header-icon theme dark"><a title="Topic" href="#"><img src="images/content-header/luna.png" alt="luna"></a></div>
+                    <div class="content__header-icon registration"><a title="Registration" href="#"><img src="images/content-header/zwon.png" alt="zwon"></a></div>
+                    <div class="content__header-icon admin"><a title="Entrance"  href="#"><img src="images/content-header/door.png" alt="door"></a></div>
+                    <div class="content__header-icon searchopen"><a title="Search" href="#"><img src="images/content-header/search.png" alt="search"></a></div>
+                </div>
+            </section>
+            <section class="recept page-block1">
+                <div class="recept__container">
+                    <h2 class="recept__title anim__items s">#HOT COMPILATION</h2>
+                    <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                    <div class="recert__body">
+                        <div class="recept__top">
+                            <div class="recept__top-item">
+                                <p class="recept__top-description s">DISH OF THE DAY</p>
+                                <a href="#" class="recept__top-title anim__items s">GRILLED CHICKEN LEGS</a>
+                                <img src="images/recept/ico.png" alt="ico">
+                            </div>
+                            <div class="recept__top-item">
+                                <p class="recept__top-description">BEST RECIPES OF THE WEEK</p>
+                                <a href="#" class="recept__top-title anim__items s">7 BEST RECIPES OF THE WEEK</a>
+                                <img src="images/recept/ico.png" alt="ico">
+                            </div>
+                        </div>
+                        <div class="recept__center">
+                            <div class="recept__center-item recept__center-item-big">
+                                <a href="#" class="recept__center-title anim__items s">HOW TO PREPARE A PIE IN ONE PIECE 5 RECIPES</a>
+                            </div>
+                            <div class="recept__center-item recept__center-item-small">
+                                <div class="recept-item-small">
+                                    <a href="#" class="recept__center-title anim__items s">HOW TO PREPARE CHEESE CAKE WITH VEGETABLES</a>
+                                </div>
+                                <div class="recept-item-small">
+                                    <a href="#" class="recept__center-title anim__items s">10 SIMPLE DRINKS IN THE HEAT</a>
+                                </div>
+                            </div>
+                        </div>              
+                    </div> 
+                </div>                
+            </section>
+            <section class="filter page-block2">
+                <div class="filter__continer">
+                    <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                    <div class="filter__buttons-box">
+                        <h2 class="filter__title anim__items s">Choose the right recipe</h2>
+                        <div class="filter__btns" id="btns__container">
+                            <button id="all" class="active">All</button>
+                            <button id="new">New</button>
+                            <button id="pop">Simple</button>
+                        </div>
+                    </div>
+                    <div class="filter__cards">
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_1-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Duck legs with vegetables and brisket</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>2:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>350 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">beef, melted butter, onion, carrot, radish, sweet pepper, tomatoes, tomato puree, potatoes...
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_2-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Beet salad with goat cheese and honey dressing</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:15:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>863 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Sugar, beets, white wine vinegar, honey, olive oil, balsamic vinegar, mustard, soft goat cheese, shelled walnuts, corn lettuce, salt
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_3-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">American pumpkin pie with cinnamon</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>02:00:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>652 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Wheat flour, butter, chicken egg, pumpkin, sugar, cream 30%, Wheat flour, butter, chicken egg, pumpkin, sugar, cream 30%
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_4-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Caesar salad traditional with beans</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>179 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Canned red beans, canned corn, chicken breast, croutons, Chinese cabbage                             
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_5-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Sauteed Brussels sprouts with boiled-smoked ham</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>283 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">garlic, black pepper, Brussels sprouts, parsley, oil, vegetable broth, salt, pumpkin, boiled smoked ham, medium carrot
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_6-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Fried eggplant with tomatoes</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:25:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>145 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Eggplant, tomatoes, onion, garlic, vegetable oil, ground black pepper, salt, parsley        
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filter__inline-block">
+                            <div class="filter__card new">
+                                <div class="filter__card-image"><img src="images/filter/f_7-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Navaren from beef</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>02:30:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>5000 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Carrots, vegetable oil, salt, onion, mini patisons, dry white wine, potatoes, garlic, thyme sprig, beef, green peas
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                            <div class="filter__card pop">
+                                <div class="filter__card-image"><img src="images/filter/f_8-min.jpg" alt="eat"></div>
+                                <div class="filter__card-content">
+                                    <a href="#" class="filter__card-title s">Brussels sprouts with white cheese sauce</a>
+                                    <div class="filter__card-icons">
+                                        <img src="images/filter/time.png" alt="time">
+                                        <span>0:40:00</span>
+                                        <img src="images/filter/kcal.png" alt="kcal">
+                                        <span>50 kcal</span>
+                                    </div>
+                                    <div class="filter__card-recept">Brussels sprouts, nutmeg, olive oil, ground black pepper, hard cheese, milk, butter, flour, water, salt
+                                    </div>
+                                    <div class="filter__card-like"><img src="images/filter/like.png" alt="like"><span></span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="hot page-block3">
+                <div class="recept-icon"><img src="images/recept/eat-icon.png" alt="eat"></div>
+                <h2 class="hot__title">Maybe you will be interested</h2>
+                <div class="hot__body">
+                    <div class="hot__item anim__items s">
+                        <h3 class="hot__item-title">HANGOVER RECIPES</h3>
+                    </div>
+                    <div class="hot__item anim__items s">
+                        <h3 class="hot__item-title">PANCAKE WEEK</h3>
+                    </div>
+                    <div class="hot__item anim__items s">
+                        <h3 class="hot__item-title">RECIPES FOR CHILDREN</h3>
+                    </div>
+                    <div class="hot__item anim__items s">
+                        <h3 class="hot__item-title">HEALTHY FOOD</h3>
+                    </div>
+                </div>
+            </section>
+            <section class="form page-block4">
+                <div class="form__container">
+                    <h2 class="form__title s">SUBSCRIBE TO RECIPES NEWSLETTER</h2>
+                    <form action="#" class="form__body">
+                                <input type="email" id="email" class="form__body-input" placeholder="E-mail">
+                                <button type="submit"><img src="images/up.png" alt="send"></button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="footer__body">
+                    <div class="footer__mail s">For cooperation - <a href="mailto:ivanovroc@gmail.com">ivanovroc@gmail.com</a></div>
+                    <div class="footer__year"><span></span> All rights reserved</div>
+                </div>
+            </footer>
+        </main>
+   </div>
+
+
+<!-- UP -->
+<section class="up">
+    <img src="images/up.png" alt="up">
+</section>
+
+
+
+
+<!-- SEARCH -->
+<section class="search">
+    <div class="search-container">
+        <input type="text" placeholder="search" name="search" id="search">
+        <button class="search-close">Close</button>
+    </div>
+    <a href="#" class="search__result"></a>
+</section>
+
+
+
+
+
+
+
+<!-- popup -->
+<section class="popup">
+    <div class="popup__container">
+        <div class="popup__body">
+            <a href="#" class="popup__body-close"><img src="images/close.svg" alt="close"></a>
+            <form action="#" class="popup__form">
+                <h2 class="popup__title">Entrance</h2>
+                <div class="popup__form-content">
+                    <div class="popup__form-left">
+                        <input type="text" class="popup__form-input" id="login" placeholder="логин">
+                        <input type="password" class="popup__form-input" id="pass" placeholder="пароль">
+                        <a href="#" class="popup__form-password">Forgot your password?</a>
+                        <button type="submit">To come in</button>
+                    </div>
+                    <div class="popup__form-rigth">
+                        <p>Default Login: <b>admin</b></p>
+                        <p>Login password: <b>1234</b></p>
+                        <p>By clicking the login button, you accept the <a href="#">User Agreement</a> and <a href="#">Privacy Policy</a></p>
+                    </div>
+                </div>
+                <div class="popup__form-register">
+                    <a href="#" class="popup__form-register-link">Registration</a>
+                </div>
+            </form>
+            <div class="popup__autorisiert">
+                <h2 class="popup__title">Sign out</h2>
+                <button id="exit" type="submit">Go out</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="popup registration">
+    <div class="popup__container registrations">
+        <div class="popup__body registration">
+            <a href="#" class="popup__body-close registration"><img src="images/close.svg" alt="close"></a>
+            <form action="#" class="popup__form registr">
+                <h2 class="popup__title">Registration</h2>
+                <div class="popup__form-content">
+                    <div class="popup__form-left">
+                        <input type="text" class="popup__form-input" id="login-registr" placeholder="create a username">
+                        <input type="password" class="popup__form-input" id="pass-registr" placeholder="create a password">
+                        <button type="submit">Register</button>
+                    </div>
+                </div>
+                <div class="popup__form-register">
+                    <a href="#" class="popup__form-register-link registr">Already have an account?</a>
+                </div>
+            </form>     
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+<section class="load">
+        <span></span>
+        <span></span>
+        <span></span>
+</section>
+
+
+<div class="window">
+    <img src="images/content-header/ok.png" alt="ok">
+    <p>Authorization completed successfully!</p>
+</div>
+
+
+
+
+
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
